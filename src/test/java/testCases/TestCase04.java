@@ -24,6 +24,6 @@ public class TestCase04 extends BaseClass {
 		assertEquals(true, driver.getTitle().equals("Top Gyms in Chennai - Best Fitness Center - Justdial"));
 		
 		Screenshot.takeScreenshot(driver, "gymPage");
-		logger.info("Navigated to gym page successfully ☑️");
+		logger.info("Navigated to gym page successfully");
 	}
 }

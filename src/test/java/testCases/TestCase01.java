@@ -20,7 +20,7 @@ public class TestCase01 extends BaseClass {
 		assertEquals(true, title.equals("Find Businesses Near You on Local Search Engine - Justdial"));
 		
 		Screenshot.takeScreenshot(driver, "homepage");
-		logger.info("Title of the Justdial page verified ☑️");
+		logger.info("Title of the Justdial page verified");
 		
 		Thread.sleep(10000);
 		page.handlePopup();
@@ -40,7 +40,7 @@ public class TestCase01 extends BaseClass {
 		assertEquals(true, title.equals("Top Car Washing Services near Chennai - Best Car Washing Centre - Justdial"));
 		
 		Screenshot.takeScreenshot(driver, "search");
-		logger.info("Navigated successfully to car wash page ☑️");
+		logger.info("Navigated successfully to car wash page");
 	}
 	
 }

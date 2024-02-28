@@ -29,7 +29,7 @@ public class TestCase02 extends BaseClass {
 		assertEquals(true, storeNames.size() >= 5);
 		Screenshot.takeScreenshot(driver, "carwash");
 		
-		logger.info("Stores retrieved successfully ☑️");
+		logger.info("Stores retrieved successfully");
 	}
 	
 	@Test(priority=2)
@@ -39,7 +39,7 @@ public class TestCase02 extends BaseClass {
 		
 		assertEquals(true, storeRatings.size() >= 5);
 		
-		logger.info("Ratings retrieved successfully ☑️");
+		logger.info("Ratings retrieved successfully");
 	}
 	
 	@Test(priority=3)
@@ -49,7 +49,7 @@ public class TestCase02 extends BaseClass {
 		
 		assertEquals(true, storeReviews.size() >= 5);
 		
-		logger.info("Reviews retrieved successfully ☑️");
+		logger.info("Reviews retrieved successfully");
 	}
 	
 	@Test(priority=4)
@@ -61,7 +61,7 @@ public class TestCase02 extends BaseClass {
 		
 		assertEquals(true, storePhoneNumbers.size() >= 5);
 		
-		logger.info("Phone numbers retrieved successfully ☑️");
+		logger.info("Phone numbers retrieved successfully");
 	}
 	
 	@Test(priority=5)
@@ -71,7 +71,7 @@ public class TestCase02 extends BaseClass {
 		
 		assertEquals(true, storeAddresses.size() >= 5);
 		
-		logger.info("Addresses retrieved successfully ☑️");
+		logger.info("Addresses retrieved successfully");
 	}
 	
 	@Test(priority=6)
@@ -81,7 +81,7 @@ public class TestCase02 extends BaseClass {
 		Screenshot.takeScreenshot(driver, "listingPage");
 		assertEquals(true, driver.getTitle().equals("Free Listing - Just Dial - List In Your Business For Free"));
 		
-		logger.info("Navigated to free listing page successfully ☑️");
+		logger.info("Navigated to free listing page successfully");
 	}
 	
 	

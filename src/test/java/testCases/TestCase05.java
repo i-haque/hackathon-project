@@ -20,10 +20,6 @@ public class TestCase05 extends BaseClass {
 		
 		assertEquals(true, subMenus.size() > 0);
 		
-		logger.info("Retrieved sub menus successfully ☑️");
-		
-		for (String subMenu: subMenus) {
-			System.out.println(subMenu);
-		}
+		logger.info("Retrieved sub menus successfully");
 	}
 }

@@ -49,7 +49,7 @@ public class CarWashServices {
 		driver.get("https://www.justdial.com/");
 		assertEquals(true, driver.getTitle().equals("Find Businesses Near You on Local Search Engine - Justdial"));
 		Screenshot.takeScreenshot(driver, "justdialPage");
-		logger.info("Cucumber: User on JustDial page ☑️");
+		logger.info("Cucumber: User on JustDial page");
 		Thread.sleep(10000);
 	}
 	
@@ -112,7 +112,7 @@ public class CarWashServices {
 			data.add(temp);
 		}
 		ExcelUtils.saveCarWashDataToExcel(data);
-		logger.info("Cucumber: car wash data collected and saved to excel ☑️");
+		logger.info("Cucumber: car wash data collected and saved to excel");
 	}
 	
 	@Given("User is on the free listing page")
@@ -120,7 +120,7 @@ public class CarWashServices {
 		CarWashPage page = new CarWashPage(driver);
 		page.clickOnListing();
 		assertEquals(true, driver.getTitle().equals("Free Listing - Just Dial - List In Your Business For Free"));
-		logger.info("Cucumber: user on free listing page ☑️");
+		logger.info("Cucumber: user on free listing page");
 	}
 	
 	@When("User enters a wrong phone number")
@@ -135,7 +135,7 @@ public class CarWashServices {
 		FreeListing page = new FreeListing(driver);
 		String errorMsg = page.getErrorMsg();
 		assertEquals(true, errorMsg.equals("Please Enter a Valid Mobile Number"));
-		logger.info("Cucumber: user gets an error message after entering wrong phone number ☑️");
+		logger.info("Cucumber: user gets an error message after entering wrong phone number");
 		Screenshot.takeScreenshot(driver, "freeListing");
 	}
 	
@@ -145,7 +145,7 @@ public class CarWashServices {
 		page.goToHomePage();
 		Thread.sleep(1000);
 		assertEquals(true, driver.getTitle().equals("Find Businesses Near You on Local Search Engine - Justdial"));
-		logger.info("Cucumber: user on home page ☑️");
+		logger.info("Cucumber: user on home page");
 	}
 	
 	@When("User selects the location and clicks on the gym icon")
@@ -158,7 +158,7 @@ public class CarWashServices {
 		
 		Thread.sleep(2000);
 		assertEquals(true, driver.getTitle().equals("Top Gyms in Chennai - Best Fitness Center - Justdial"));
-		logger.info("Cucumber: user on gym page ☑️");
+		logger.info("Cucumber: user on gym page");
 	}
 	
 	@Then("User needs to collect all the sub menus")
@@ -172,7 +172,7 @@ public class CarWashServices {
 		}
 		// saving sub menus to excel
 		ExcelUtils.saveGymSubMenuDataToExcel(subMenus);
-		logger.info("Cucumber: gym sbu menus collected and saved to excel ☑️");
+		logger.info("Cucumber: gym sbu menus collected and saved to excel");
 		Screenshot.takeScreenshot(driver, "gymPage");
 	}
 	

@@ -21,7 +21,7 @@ public class TestCase03 extends BaseClass {
 		
 		Screenshot.takeScreenshot(driver, "listingPage");
 		assertEquals(true, errorMsg.equals("Please Enter a Valid Mobile Number"));
-		logger.info("On invalid input of phone number, error meesage recieved successfully ☑️");
+		logger.info("On invalid input of phone number, error meesage recieved successfully");
 	}
 	
 	@Test(priority=2)
@@ -32,6 +32,6 @@ public class TestCase03 extends BaseClass {
 		
 		Screenshot.takeScreenshot(driver, "backToHomePage");
 		assertEquals(true, driver.getTitle().equals("Find Businesses Near You on Local Search Engine - Justdial"));
-		logger.info("Navigated to Justdial homepage successfully ☑️");
+		logger.info("Navigated to Justdial homepage successfully");
 	}
 }
