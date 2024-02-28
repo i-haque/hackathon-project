@@ -167,9 +167,6 @@ public class CarWashServices {
 		subMenus = page.getSubMenus();
 		assertEquals(true, subMenus.size() > 0);
 		
-		for (String subMenu: subMenus) {
-			System.out.println(subMenu);
-		}
 		// saving sub menus to excel
 		ExcelUtils.saveGymSubMenuDataToExcel(subMenus);
 		logger.info("Cucumber: gym sbu menus collected and saved to excel");
