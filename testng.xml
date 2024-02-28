@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"/>
+	</listeners>
+  	<test thread-count="5" name="Test1">
+  	<parameter name="browser" value="chrome"/>
+  	<parameter name="os" value="windows"/>
+    	<classes>
+      		<class name="testCases.TestCase01"/>
+      		<class name="testCases.TestCase02"/>
+      		<class name="testCases.TestCase03"/>
+      		<class name="testCases.TestCase04"/>
+      		<class name="testCases.TestCase05"/>
+    	</classes>
+  	</test> <!-- Test -->
+  	
+  	<!-- <test thread-count="5" name="Test2">
+  	<parameter name="browser" value="edge"/>
+  	<parameter name="os" value="windows"/>
+    	<classes>
+      		<class name="testCases.TestCase01"/>
+      		<class name="testCases.TestCase02"/>
+      		<class name="testCases.TestCase03"/>
+      		<class name="testCases.TestCase04"/>
+      		<class name="testCases.TestCase05"/>
+    	</classes>
+  	</test> -->
+</suite> <!-- Suite -->
